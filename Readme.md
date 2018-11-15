@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml.vb](./VB/ColumnChooserDoubleClick/MainWindow.xaml.vb))
+* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/ColumnChooserDoubleClick/MainWindow.xaml.vb))
+* [ViewModel.cs](./CS/ViewModel.cs)
+<!-- default file list end -->
 # How to move a column from ColumnChooser by double-clicking it
 
 
