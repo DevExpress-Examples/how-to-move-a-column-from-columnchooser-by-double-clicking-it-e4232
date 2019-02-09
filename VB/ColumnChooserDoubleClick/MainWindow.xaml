@@ -1,14 +1,13 @@
-﻿<Window 
-    x:Class="ColumnChooserDoubleClick.MainWindow" 
+<Window x:Class="ColumnChooserDoubleClick.MainWindow" 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
     Title="MainWindow" 
     Height="550" 
     Width="525" 
     xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
-    xmlns:dxgt="clr-namespace:DevExpress.Xpf.Grid.Themes;assembly=DevExpress.Xpf.Grid.v12.1"
+    xmlns:dxgt="clr-namespace:DevExpress.Xpf.Grid.Themes;assembly=DevExpress.Xpf.Grid.v13.1"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
-    xmlns:dxgcore="clr-namespace:DevExpress.Xpf.Grid;assembly=DevExpress.Xpf.Grid.v12.1.Core" 
+    xmlns:dxgcore="clr-namespace:DevExpress.Xpf.Grid;assembly=DevExpress.Xpf.Grid.v13.1.Core" 
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
     WindowStartupLocation="CenterScreen">
     <Window.Resources>
@@ -46,7 +45,7 @@
                                         <Border Grid.Row="1" Grid.Column="1" 
                                         x:Name="PART_HorizontalScrollCorner" 
                                         Style="{DynamicResource {dxgt:ScrollBarThemeKey ResourceKey=ScrollingCornerStyle}}"
-                                        Margin="0"/>
+                                        Margin="0" />
                                     </Grid>
                                 </ControlTemplate>
                             </ScrollViewer.Template>
@@ -61,8 +60,7 @@
                                     </dxg:ColumnItemsControl.Visibility>
                                     <dxg:ColumnItemsControl.ItemTemplate>
                                         <DataTemplate>
-                                            <dxg:GridColumnHeader
-                                            MouseDoubleClick="GridColumnHeader_MouseDoubleClick"    
+                                            <dxg:GridColumnHeader MouseDoubleClick="GridColumnHeader_MouseDoubleClick"    
                                             DataContext="{Binding Path=Content.Column, RelativeSource={RelativeSource TemplatedParent}}"
                                             dxg:GridColumn.HeaderPresenterType="ColumnChooser"
                                             dxg:GridColumnHeader.GridColumn="{Binding}"
